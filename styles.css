@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: hsl(234, 29%, 20%);
+}
+
+h1,
+h2 {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+a {
+  color: hsl(228, 45%, 44%);
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.outer {
+  padding: 30px;
+  background: white;
+  border-radius: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 30px;
+}
+
+.card {
+  padding: 0 16px;
+  width: 100%;
+}
+
+.form {
+  padding: 0 32px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .error {
+  color: red;
+}
+
+.form input {
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.form button,
+.success button {
+  padding: 16px;
+  border-radius: 10px;
+
+  background-color: rgb(46, 46, 90);
+  color: white;
+  text-decoration: none;
+  border-style: dotted;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.error,
+.success {
+  display: none;
+}
+
+.left,
+.right {
+  flex-grow: 1;
+}
+
+.right {
+  order: -1;
+  padding: 0 16px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .right {
+    order: 2;
+  }
+}
